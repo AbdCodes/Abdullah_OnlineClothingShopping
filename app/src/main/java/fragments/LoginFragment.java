@@ -13,9 +13,10 @@ import com.abdullah_onlineclothingshopping.R;
  * A simple {@link Fragment} subclass.
  */
 public class LoginFragment extends Fragment {
-      View view;
 
 
+    
+    View view;
     public LoginFragment() {
         // Required empty public constructor
     }

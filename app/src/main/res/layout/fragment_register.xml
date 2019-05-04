@@ -25,29 +25,12 @@
         />
 
     <EditText
-        android:id="@+id/etFirstname"
+        android:id="@+id/etCpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your first name"
+        android:hint="Confirm your password"
         android:layout_marginTop="20dp"
         />
-
-    <EditText
-        android:id="@+id/etLastname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your last name"
-        android:layout_marginTop="20dp"
-        />
-
-    <EditText
-        android:id="@+id/etAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your address"
-        android:layout_marginTop="20dp"
-        />
-
 
 
 
