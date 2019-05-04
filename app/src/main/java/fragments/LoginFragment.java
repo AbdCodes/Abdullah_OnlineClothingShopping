@@ -1,6 +1,7 @@
 package fragments;
 
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.abdullah_onlineclothingshopping.DashboardActivity;
 import com.abdullah_onlineclothingshopping.R;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -58,7 +60,11 @@ public class LoginFragment extends Fragment {
         String password=sharedPreferences.getString("password","");
         if (username.equals(etUsername.getText().toString()) &&
           password.equals(etPassword.getText().toString())){
-            Toast.makeText(getContext(), "BING BING", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Successfully Logged In", Toast.LENGTH_SHORT).show();
+
+            Intent intent=new Intent(getContext(), DashboardActivity.class);
+            intent.putExtra("myMessage","Welcome to the DashBoard");
+            startActivity(intent);
         }
         else{
             Toast.makeText(getContext(), "Either Username or password is incorrect", Toast.LENGTH_SHORT).show();
