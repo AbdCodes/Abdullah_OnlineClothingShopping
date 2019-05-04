@@ -1,52 +1,13 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="fragments.RegisterFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <EditText
-        android:id="@+id/etUsername"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your user name"
-        />
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
 
-    <EditText
-        android:id="@+id/etFname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your first name"
-        />
-    <EditText
-        android:id="@+id/etLname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your last name"
-        />
-    <EditText
-        android:id="@+id/etAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your address"
-        />
-
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your password"
-        />
-
-    <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:gravity="center"
-        />
-
-
-</LinearLayout>
+</FrameLayout>
