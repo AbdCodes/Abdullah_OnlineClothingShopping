@@ -40,6 +40,8 @@
         android:layout_height="wrap_content"
         android:text="REGISTER"
         android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/cardview_light_background"
         />
 
 </LinearLayout>

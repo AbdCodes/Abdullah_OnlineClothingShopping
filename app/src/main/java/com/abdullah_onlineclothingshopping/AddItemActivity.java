@@ -1,5 +1,6 @@
 package com.abdullah_onlineclothingshopping;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -32,6 +33,9 @@ public class AddItemActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Save();
+                Intent intent=new Intent(AddItemActivity.this,DashboardActivity.class);
+                startActivity(intent);
+
             }
         });
     }

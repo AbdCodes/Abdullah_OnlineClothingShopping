@@ -27,6 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOGIN"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/cardview_light_background"
         />
 
 

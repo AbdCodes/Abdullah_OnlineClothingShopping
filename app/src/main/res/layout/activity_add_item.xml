@@ -24,14 +24,14 @@
         android:id="@+id/etItemImageName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter the Item Image"
+        android:hint="Enter the Item Image Name"
         />
 
     <EditText
         android:id="@+id/etItemDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter the Item Image"
+        android:hint="Enter the Item Description"
         />
 
     <Button
@@ -39,6 +39,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Item"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/cardview_light_background"
         />
 
 

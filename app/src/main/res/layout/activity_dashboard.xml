@@ -20,6 +20,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Item"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/cardview_light_background"
+        />
+
+    <TextView
+        android:id="@+id/topProducts"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="OUR TOP PRODUCTS"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="@color/lightBlue"
+        android:textSize="15sp"
         />
 
     <android.support.v7.widget.RecyclerView
