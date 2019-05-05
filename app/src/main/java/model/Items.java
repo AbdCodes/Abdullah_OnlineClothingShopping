@@ -4,15 +4,14 @@ public class Items {
 
     private String ItemName;
     private String ItemPrice;
-    private int ItemID;
+    private int ItemImage;
     private String ItemDescription;
 
-
-    public Items(String ItemName,String ItemPrice, int ItemID,String ItemDescription){
-        this.ItemName=ItemName;
-        this.ItemPrice=ItemPrice;
-        this.ItemID=ItemID;
-        this.ItemDescription=ItemDescription;
+    public Items(String itemName, String itemPrice, int itemImage, String itemDescription) {
+        ItemName = itemName;
+        ItemPrice = itemPrice;
+        ItemImage = itemImage;
+        ItemDescription = itemDescription;
     }
 
     public String getItemName() {
@@ -31,13 +30,12 @@ public class Items {
         ItemPrice = itemPrice;
     }
 
-    public int getItemID() {
-        return ItemID;
+    public int getItemImage() {
+        return ItemImage;
     }
 
-    public void setItemID(int itemID) {
-        this.ItemID=ItemID;
-
+    public void setItemImage(int itemImage) {
+        ItemImage = itemImage;
     }
 
     public String getItemDescription() {
@@ -48,6 +46,3 @@ public class Items {
         ItemDescription = itemDescription;
     }
 }
-
-
-
