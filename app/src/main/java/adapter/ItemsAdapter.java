@@ -32,19 +32,21 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemsViewHol
 
     @NonNull
     @Override
-    public ItemsAdapter.ItemsViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public ItemsViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view=LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.activity_dashboard,viewGroup,false);
+                .inflate(R.layout.item,viewGroup,false);
         return new ItemsViewHolder(view);
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemsAdapter.ItemsViewHolder itemsViewHolder, int i) {
+    public void onBindViewHolder(@NonNull ItemsViewHolder itemsViewHolder, int i) {
 
         final Items items=itemsList.get(i);
         itemsViewHolder.itemImage.setImageResource(items.getItemImage());
         itemsViewHolder.itemName.setText(items.getItemName());
+        itemsViewHolder.itemPrice.setText(items.getItemPrice());
+        itemsViewHolder.itemDescription.setText(items.getItemDescription());
 
 
         //
@@ -82,6 +84,8 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemsViewHol
 
             itemImage=itemView.findViewById(R.id.itemImage);  //
             itemName=itemView.findViewById(R.id.itemName); //
+            itemPrice=itemView.findViewById(R.id.itemPrice);
+            itemDescription=itemView.findViewById(R.id.itemDescription);
         }
     }
 }
